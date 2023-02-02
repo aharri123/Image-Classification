@@ -21,4 +21,7 @@ First we start off by taking all the data from our directories and augmenting th
 
 ![reshaping](https://user-images.githubusercontent.com/45251340/216470702-8404dbad-3b62-4bfb-83ca-a07a2b594390.JPG)
 
-After augmenting, we'll create our training, testing, and validation sets, then reshape our images.  
+After augmenting, we'll create our training, testing, and validation sets, then reshape our images. Before reshaping, our image set sizes were: 
+![before resizing data](https://user-images.githubusercontent.com/45251340/216472303-a48413cd-aabb-46dc-a73d-c7fb5a49bec8.JPG)
+
+
