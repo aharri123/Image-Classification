@@ -88,3 +88,25 @@ We ran the same model as before, except this time we increased the number of epo
 **Our accuracy and loss curves:**
 
 ![model with more epochs curve](https://user-images.githubusercontent.com/45251340/216476800-b4906850-eb30-43e6-8a0b-20f48fc8f0be.JPG)
+
+We still have an overfitting issue, but our accuracy is back up again. Lastly, let's see if we can implement dropout regularization to reduce overfitting.
+
+## Deep Neural Network With Dropout Regularization ##
+
+**Implementing dropout regularization:**
+
+![dropout regularization](https://user-images.githubusercontent.com/45251340/216477420-455c8b70-07db-4b9e-b29e-41560de9453e.JPG)
+
+**Our epochs:**
+
+![dropout reg accuracy](https://user-images.githubusercontent.com/45251340/216477590-f6e8189d-fa05-4d5b-a684-08bfe5cb8f19.JPG)
+
+**Our training and testing accuracy:** 
+
+![dropout reg acc](https://user-images.githubusercontent.com/45251340/216477621-311af745-fcc4-48d2-aff2-1479c7ae0381.JPG)
+
+**Our accuracy and loss curves:**
+
+![dropout reg curves](https://user-images.githubusercontent.com/45251340/216477641-f7f50ce5-d8f1-460e-83c0-2db76a4f2401.JPG)
+
+
