@@ -44,3 +44,13 @@ First we start off by taking all the data from our directories and augmenting th
 **Our accuracy and loss curves:**
 
 ![initial model curves](https://user-images.githubusercontent.com/45251340/216474012-57f0bb2e-ed3f-47f1-8069-b733e76aff8f.JPG)
+
+As we can see, our model is overfitting. So for our next model, we added some more layers.
+
+## Deep neural network with hidden layers ##
+
+![deep model with more layers](https://user-images.githubusercontent.com/45251340/216474359-aac42bd8-7a18-4692-a7c8-1578aff0ea27.JPG)
+
+**Our training and testing accuracy:** 
+
+![deep model with more layers accuracy](https://user-images.githubusercontent.com/45251340/216474474-025b61b8-cfec-4aa0-8f7c-f16e26a85444.JPG)
