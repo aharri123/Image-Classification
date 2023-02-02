@@ -47,7 +47,7 @@ First we start off by taking all the data from our directories and augmenting th
 
 As we can see, our model is overfitting. So for our next model, we added some more layers.
 
-## Deep neural network with hidden layers ##
+## Deep Neural Network With Hidden Layers ##
 
 ![deep model with more layers](https://user-images.githubusercontent.com/45251340/216474359-aac42bd8-7a18-4692-a7c8-1578aff0ea27.JPG)
 
@@ -55,3 +55,6 @@ As we can see, our model is overfitting. So for our next model, we added some mo
 
 ![deep model with more layers accuracy](https://user-images.githubusercontent.com/45251340/216474474-025b61b8-cfec-4aa0-8f7c-f16e26a85444.JPG)
 
+From this, we can see that our accuracy dramatically dropped, but that we're still overfitting. Next, we'll try adding more epochs to see if that has an effect.
+
+## Deep Neural Network With More Epochs ##
