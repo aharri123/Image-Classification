@@ -33,9 +33,14 @@ First we start off by taking all the data from our directories and augmenting th
 
 ## Initial Model ##
 
-**Our initial deep neural network had 0 hidden layers**
+**Our initial deep neural network had 0 hidden layers: **
 
 ![initial model](https://user-images.githubusercontent.com/45251340/216473473-85788f0c-9750-46bd-a035-fea52a52af89.JPG)
+
+**Our epochs:**
+
+![5 epochs](https://user-images.githubusercontent.com/45251340/216476152-8bdc6bb8-7dd7-46a4-a738-63d5f5e154e4.JPG)
+
 
 **Our training and testing accuracy:** 
 
@@ -51,10 +56,27 @@ As we can see, our model is overfitting. So for our next model, we added some mo
 
 ![deep model with more layers](https://user-images.githubusercontent.com/45251340/216474359-aac42bd8-7a18-4692-a7c8-1578aff0ea27.JPG)
 
+**Our epochs:**
+
+![5 epochs v2](https://user-images.githubusercontent.com/45251340/216476237-d5a5c55c-dc7a-4ef7-ae72-3c2e964c48e7.JPG)
+
+
 **Our training and testing accuracy:** 
 
 ![deep model with more layers accuracy](https://user-images.githubusercontent.com/45251340/216474474-025b61b8-cfec-4aa0-8f7c-f16e26a85444.JPG)
 
+
+**Our accuracy and loss curves:**
+
+![model with more layers curves](https://user-images.githubusercontent.com/45251340/216476418-60be30ed-0154-427d-b2b3-175c4f56e6d7.JPG)
+
+
 From this, we can see that our accuracy dramatically dropped, but that we're still overfitting. Next, we'll try adding more epochs to see if that has an effect.
 
 ## Deep Neural Network With More Epochs ##
+
+We ran the same model as before, except this time we increased the number of epochs from 5 to 10.
+
+**Our epochs:**
+
+
