@@ -29,3 +29,9 @@ First we start off by taking all the data from our directories and augmenting th
 
 ![after resizing data](https://user-images.githubusercontent.com/45251340/216472520-fdaff589-bb7c-47b5-b9b9-5e213bcf2354.JPG)
 
+**Now it's time to build our initial model**
+
+## Initial Model ##
+Our initial deep neural network had 0 hidden layers
+![initial model](https://user-images.githubusercontent.com/45251340/216473473-85788f0c-9750-46bd-a035-fea52a52af89.JPG)
+
