@@ -25,4 +25,6 @@ First we start off by taking all the data from our directories and augmenting th
 
 ![before resizing data](https://user-images.githubusercontent.com/45251340/216472303-a48413cd-aabb-46dc-a73d-c7fb5a49bec8.JPG)
 
+**After reshaping our images, the sizes are:**
+![after resizing data](https://user-images.githubusercontent.com/45251340/216472520-fdaff589-bb7c-47b5-b9b9-5e213bcf2354.JPG)
 
