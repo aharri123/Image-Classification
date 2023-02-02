@@ -79,4 +79,12 @@ We ran the same model as before, except this time we increased the number of epo
 
 **Our epochs:**
 
+![10 epochs](https://user-images.githubusercontent.com/45251340/216476533-89599e1e-cd1d-42fe-b6d3-78b3f0c99053.JPG)
 
+**Our training and testing accuracy:** 
+
+![model with more epochs accuracy](https://user-images.githubusercontent.com/45251340/216476779-f75ce36c-ae7f-4c77-ae41-2a46ef372417.JPG)
+
+**Our accuracy and loss curves:**
+
+![model with more epochs curve](https://user-images.githubusercontent.com/45251340/216476800-b4906850-eb30-43e6-8a0b-20f48fc8f0be.JPG)
