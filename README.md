@@ -32,14 +32,15 @@ First we start off by taking all the data from our directories and augmenting th
 **Now it's time to build our initial model**
 
 ## Initial Model ##
-Our initial deep neural network had 0 hidden layers
+
+**Our initial deep neural network had 0 hidden layers**
 
 ![initial model](https://user-images.githubusercontent.com/45251340/216473473-85788f0c-9750-46bd-a035-fea52a52af89.JPG)
 
-Our training and testing accuracy: 
+**Our training and testing accuracy:** 
 
 ![initial model accuracy](https://user-images.githubusercontent.com/45251340/216473891-798569a9-3e76-47ce-994e-4665ce48bc9e.JPG)
 
-Our accuracy and loss curves: 
+**Our accuracy and loss curves:**
 
 ![initial model curves](https://user-images.githubusercontent.com/45251340/216474012-57f0bb2e-ed3f-47f1-8069-b733e76aff8f.JPG)
