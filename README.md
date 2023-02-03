@@ -114,11 +114,22 @@ From our accuracy scores and curves, we can see that overfitting is still an iss
 
 ## Our Initial CNN Model ##
 
-**Our initial CNN model has 2 convolutional layers, 3 pooling layers, 1 flattening layer and 1 fully connected dense layer:**
+**Our initial CNN model had 2 convolutional layers, 3 pooling layers, 1 flattening layer and 1 fully connected dense layer:**
 
 ![initial cnn](https://user-images.githubusercontent.com/45251340/216479147-4416d5f0-437f-4fd6-acaa-bd90a17e981d.JPG)
 
 ![initial cnn2](https://user-images.githubusercontent.com/45251340/216479154-8f8e741d-f926-45b7-975e-28e564b7b644.JPG)
 
 
+**Our initial CNN had 20 epochs:**
+
+![initial cnn epochs](https://user-images.githubusercontent.com/45251340/216479556-1dc56de8-8492-402c-9903-2b1db7f9d679.JPG)
+
+**Our training and testing accuracy:** 
+
+![initial cnn accuracy](https://user-images.githubusercontent.com/45251340/216479758-5d6c5e6f-9bb6-4550-b666-1587a0b0d61f.JPG)
+
+**Our accuracy and loss curves:**
+
+![intial cnn curves](https://user-images.githubusercontent.com/45251340/216479789-749a7875-229f-4f1e-89b5-256135ff8ae5.JPG)
 
