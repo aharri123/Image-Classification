@@ -153,3 +153,30 @@ Our results still suggest overfitting, so let's implement some more dropout regu
 
 ![cnn dropout reg curves](https://user-images.githubusercontent.com/45251340/216480570-876857f1-75c2-4ec8-81ff-2c3678de961b.JPG)
 
+Our curves improved slightly, as did our accuracy, but we're still overfitting, so let's see if we can improve our model even more. We'll decrease the number of epochs, as our accuracy curve suggests that accuracy is best around 10 epochs.
+
+## CNN Model With Decreased Epochs##
+We used the same model as previous, but changed our number of epochs from 20 to 10.
+
+**Our epochs:**
+
+![cnn decrease epochs epochs](https://user-images.githubusercontent.com/45251340/216481212-3dd92522-b694-477a-870f-ea8c71722462.JPG)
+
+**Our training and testing accuracy:** 
+
+![cnn decrease epochs accuracy](https://user-images.githubusercontent.com/45251340/216481252-8fd529d4-a379-49d5-8fcc-1d229a0b9514.JPG)
+
+**Our accuracy and loss curves:**
+
+![cnn decrease epochs curves](https://user-images.githubusercontent.com/45251340/216481262-5cb70d4e-c757-4cb4-bd80-6ad0bcbed319.JPG)
+
+
+## Conclusion ##
+
+Our goal was to work with Palomar Medical Center to build an image classification model that takes patient X-rays and identifies if the patient has Pneumonia or not. This will help the hospital doctors make a quicker diagnosis, and reduce the time spent on consulting X-rays before meeting with patients. We initially used a deep neural network, then moved onto a Convolutional Neural Network.
+
+Our initial deep neural network had 0 hidden layers, and after running we found it was overfitting. Our model had a testing accuracy of about 92% and a testing accuracy of 72%. For the next model, we added more layers, and after running it found that while accuracy dramatically dropped, it was still overfitting. It had a training accuracy of about 39% and a testing accuracy of about 34%. Next, we added more epochs to see if that would have an impact on our accuracy and overfitting issue. We found that we still had an overfitting issue, but our accuracy improved again, with our training accuracy at about 94%, and our testing accuracy at 79%. Lastly, we implemented dropout regularization, to see if that would reduce overfitting. Our training accuracy was 74%, while our testing accuracy was about 62%, so overfitting was still an issue. We then decided to switch over to a CNN.
+
+Our initial CNN model had 2 convolutional layers, 3 pooling layers, 1 flattening layer and 1 fully connected dense layer. Our initial training accuracy was about 95% and our testing accuracy was about 94%. This along with our loss and accuracy curves sugested overfitting still. Next we implemented dropout regularization before doing anything else to see if our overfitting would be addressed. Our curves improved slightly, and our testing and training accuracy were both at about 94%. Lastly, we decreased the number of epochs from 20 to 10. Here, we saw the most improvement, not only in our curves but also in our accuracy. Our final training accuracy was about 90%, and our final testing accuracy was about 91%.
+
+Our model accuracy overall improved greatly when switching from a deep neural network to a CNN. At it's lowest, our deep neural network had a testing accuracy of about 34%, and at its highest it was about 79%. In comparison, our CNN had at its lowest a testing accuracy of about 91%, and at its highest 94%. Our model is still overfitting, but compared to previous models, we were able to reduce it somewhat through Dropout Regularization and reducing the number of epochs.
