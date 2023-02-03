@@ -110,3 +110,6 @@ We still have an overfitting issue, but our accuracy is back up again. Lastly, l
 ![dropout reg curves](https://user-images.githubusercontent.com/45251340/216477641-f7f50ce5-d8f1-460e-83c0-2db76a4f2401.JPG)
 
 
+From our accuracy scores and curves, we can see that overfitting is still an issue. So let's try and switch over to a CNN model, and see if we can improve our output.
+
+## Our Initial CNN Model##
