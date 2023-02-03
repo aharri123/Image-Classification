@@ -112,4 +112,4 @@ We still have an overfitting issue, but our accuracy is back up again. Lastly, l
 
 From our accuracy scores and curves, we can see that overfitting is still an issue. So let's try and switch over to a CNN model, and see if we can improve our output.
 
-## Our Initial CNN Model##
+## Our Initial CNN Model ##
