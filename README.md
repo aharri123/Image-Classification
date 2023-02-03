@@ -113,3 +113,12 @@ We still have an overfitting issue, but our accuracy is back up again. Lastly, l
 From our accuracy scores and curves, we can see that overfitting is still an issue. So let's try and switch over to a CNN model, and see if we can improve our output.
 
 ## Our Initial CNN Model ##
+
+**Our initial CNN model has 2 convolutional layers, 3 pooling layers, 1 flattening layer and 1 fully connected dense layer:**
+
+![initial cnn](https://user-images.githubusercontent.com/45251340/216479147-4416d5f0-437f-4fd6-acaa-bd90a17e981d.JPG)
+
+![initial cnn2](https://user-images.githubusercontent.com/45251340/216479154-8f8e741d-f926-45b7-975e-28e564b7b644.JPG)
+
+
+
