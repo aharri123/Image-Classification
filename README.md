@@ -133,3 +133,23 @@ From our accuracy scores and curves, we can see that overfitting is still an iss
 
 ![intial cnn curves](https://user-images.githubusercontent.com/45251340/216479789-749a7875-229f-4f1e-89b5-256135ff8ae5.JPG)
 
+Our results still suggest overfitting, so let's implement some more dropout regularization
+
+## CNN Model With Dropout Regularization ##
+
+**Implementing dropout regularization:**
+
+![cnn dropout reg](https://user-images.githubusercontent.com/45251340/216480307-a82831ed-5ba5-4eef-9cbc-1cd20c5fa8d1.JPG)
+
+**Our epochs:**
+
+![cnn dropout reg epochs](https://user-images.githubusercontent.com/45251340/216480524-9a3fefb3-dc26-4d18-8496-82d95cfde6e9.JPG)
+
+**Our training and testing accuracy:** 
+
+![cnn dropout reg accuracy](https://user-images.githubusercontent.com/45251340/216480558-ad516727-31a4-4d60-82a1-b93026ed6536.JPG)
+
+**Our accuracy and loss curves:**
+
+![cnn dropout reg curves](https://user-images.githubusercontent.com/45251340/216480570-876857f1-75c2-4ec8-81ff-2c3678de961b.JPG)
+
