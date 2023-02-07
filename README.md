@@ -71,7 +71,7 @@ Looks like our model is overfitting, since our training accuracy is higher than 
 ![model with more layers curves](https://user-images.githubusercontent.com/45251340/216476418-60be30ed-0154-427d-b2b3-175c4f56e6d7.JPG)
 
 
-From this, we can see that our accuracy dramatically dropped, but that we're still overfitting. Next, we'll try adding more epochs to see if that has an effect.
+This time our accuracy fell greatly. There's also no loss occuring in our training set still. Let's add some more epochs to see if that has any improvement on our results.
 
 ## Deep Neural Network With More Epochs ##
 
@@ -89,7 +89,7 @@ We ran the same model as before, except this time we increased the number of epo
 
 ![model with more epochs curve](https://user-images.githubusercontent.com/45251340/216476800-b4906850-eb30-43e6-8a0b-20f48fc8f0be.JPG)
 
-We still have an overfitting issue, but our accuracy is back up again. Lastly, let's see if we can implement dropout regularization to reduce overfitting.
+Our testing accuracy is still lower than our training accuracy, so some overfitting is still going on. However we're seeing some loss occuring in our training model, which is an improvement compared to before. Slightly better results, but let's add some dropout regularization to see if that helps decrease overfitting.
 
 ## Deep Neural Network With Dropout Regularization ##
 
@@ -110,7 +110,7 @@ We still have an overfitting issue, but our accuracy is back up again. Lastly, l
 ![dropout reg curves](https://user-images.githubusercontent.com/45251340/216477641-f7f50ce5-d8f1-460e-83c0-2db76a4f2401.JPG)
 
 
-From our accuracy scores and curves, we can see that overfitting is still an issue. So let's try and switch over to a CNN model, and see if we can improve our output.
+That doesn't seem to have helped, and if anything has made everything worse. Let's try a different approach and try using a CNN.
 
 ## Our Initial CNN Model ##
 
