@@ -17,7 +17,7 @@ The data comes from a kaggle dataset of chest X-ray images. There are 5,856 imag
 
 
 ## Starting off ##
-First we start off by taking all the data from our directories and augmenting them: 
+**First we start off by taking all the data from our directories and augmenting them:**
 
 ![reshaping](https://user-images.githubusercontent.com/45251340/216470702-8404dbad-3b62-4bfb-83ca-a07a2b594390.JPG)
 
