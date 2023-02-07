@@ -75,7 +75,7 @@ First we start off by taking all the data from our directories and augmenting th
 
 ## Deep Neural Network With More Epochs ##
 
-We ran the same model as before, except this time we increased the number of epochs from 5 to 10.
+**We ran the same model as before, except this time we increased the number of epochs from 5 to 10.**
 
 **Our epochs:**
 
