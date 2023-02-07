@@ -133,7 +133,7 @@ That doesn't seem to have helped, and if anything has made everything worse. Let
 
 ![intial cnn curves](https://user-images.githubusercontent.com/45251340/216479789-749a7875-229f-4f1e-89b5-256135ff8ae5.JPG)
 
-Our results still suggest overfitting, so let's implement some more dropout regularization
+Our training accuracy is higher than our testing accuracy, signifying overfitting but significantly less so when compared to our DNN models. We also immediately see training loss occuring in our initial model, which we did not see in our initial DNN model. Our initial results look promising, so let's try adding some dropout regularization to see if we can improve our model.
 
 ## CNN Model With Dropout Regularization ##
 
@@ -153,7 +153,7 @@ Our results still suggest overfitting, so let's implement some more dropout regu
 
 ![cnn dropout reg curves](https://user-images.githubusercontent.com/45251340/216480570-876857f1-75c2-4ec8-81ff-2c3678de961b.JPG)
 
-Our curves improved slightly, as did our accuracy, but we're still overfitting, so let's see if we can improve our model even more. We'll decrease the number of epochs, as our accuracy curve suggests that accuracy is best around 10 epochs.
+Our training and testing accuracy are now the same, which is an improvement. Our training and testing loss are also extremely close in value. However our validation accuracy is still relatively low. Let's see what happens if we decrease the number of epochs to around 10.
 
 ## CNN Model With Decreased Epochs##
 We used the same model as previous, but changed our number of epochs from 20 to 10.
@@ -170,6 +170,7 @@ We used the same model as previous, but changed our number of epochs from 20 to 
 
 ![cnn decrease epochs curves](https://user-images.githubusercontent.com/45251340/216481262-5cb70d4e-c757-4cb4-bd80-6ad0bcbed319.JPG)
 
+For the first time, our testing accuracy is higher than our training accuracy. Our validation accuracy is also the highest it has been during our tuning. This is significant improvement from our initial DNN and CNN model, so let's move on to our conclusion.
 
 ## Conclusion ##
 
