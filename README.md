@@ -153,7 +153,7 @@ The data comes from a kaggle dataset of chest X-ray images. There are 5,856 imag
 
 ![cnn dropout reg curves](https://user-images.githubusercontent.com/45251340/216480570-876857f1-75c2-4ec8-81ff-2c3678de961b.JPG)
 
-**Our training and testing accuracy are now the same, which is an improvement. Our training and testing loss are also extremely close in value. However our validation accuracy is still relatively low. Let's see what happens if we decrease the number of epochs to around 10.**
+**Our training and testing accuracy are now almost the same, which is an improvement. Our training and testing loss are also extremely close in value. However our validation accuracy is still relatively low. Let's see what happens if we decrease the number of epochs to around 10.**
 
 ## CNN Model With Decreased Epochs##
 We used the same model as previous, but changed our number of epochs from 20 to 10.
