@@ -50,7 +50,7 @@ First we start off by taking all the data from our directories and augmenting th
 
 ![initial model curves](https://user-images.githubusercontent.com/45251340/216474012-57f0bb2e-ed3f-47f1-8069-b733e76aff8f.JPG)
 
-As we can see, our model is overfitting. So for our next model, we added some more layers.
+Looks like our model is overfitting, since our training accuracy is higher than our validation accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring for our trainin model, which suggests our model needs some work. Let's add some more layers and see how that affects the model.
 
 ## Deep Neural Network With Hidden Layers ##
 
