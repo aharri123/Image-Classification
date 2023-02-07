@@ -63,7 +63,7 @@ The data comes from a kaggle dataset of chest X-ray images. There are 5,856 imag
 
 **Our training and testing accuracy:** 
 
-![deep model with more layers accuracy](https://user-images.githubusercontent.com/45251340/216474474-025b61b8-cfec-4aa0-8f7c-f16e26a85444.JPG)
+![deep model with more layers accuracy](https://user-images.githubusercontent.com/45251340/217335040-21ceda77-c6b2-4136-bc1b-7f5c1ede57aa.JPG)
 
 
 **Our accuracy and loss curves:**
