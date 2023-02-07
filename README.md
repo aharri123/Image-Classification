@@ -71,7 +71,7 @@ First we start off by taking all the data from our directories and augmenting th
 ![model with more layers curves](https://user-images.githubusercontent.com/45251340/216476418-60be30ed-0154-427d-b2b3-175c4f56e6d7.JPG)
 
 
-This time our accuracy fell greatly. There's also no loss occuring in our training set still. Let's add some more epochs to see if that has any improvement on our results.
+**This time our accuracy fell greatly. There's also no loss occuring in our training set still. Let's add some more epochs to see if that has any improvement on our results.**
 
 ## Deep Neural Network With More Epochs ##
 
@@ -89,7 +89,7 @@ We ran the same model as before, except this time we increased the number of epo
 
 ![model with more epochs curve](https://user-images.githubusercontent.com/45251340/216476800-b4906850-eb30-43e6-8a0b-20f48fc8f0be.JPG)
 
-Our testing accuracy is still lower than our training accuracy, so some overfitting is still going on. However we're seeing some loss occuring in our training model, which is an improvement compared to before. Slightly better results, but let's add some dropout regularization to see if that helps decrease overfitting.
+**Our testing accuracy is still lower than our training accuracy, so some overfitting is still going on. However we're seeing some loss occuring in our training model, which is an improvement compared to before. Slightly better results, but let's add some dropout regularization to see if that helps decrease overfitting.**
 
 ## Deep Neural Network With Dropout Regularization ##
 
@@ -110,7 +110,7 @@ Our testing accuracy is still lower than our training accuracy, so some overfitt
 ![dropout reg curves](https://user-images.githubusercontent.com/45251340/216477641-f7f50ce5-d8f1-460e-83c0-2db76a4f2401.JPG)
 
 
-That doesn't seem to have helped, and if anything has made everything worse. Let's try a different approach and try using a CNN.
+**That doesn't seem to have helped, and if anything has made everything worse. Let's try a different approach and try using a CNN.**
 
 ## Our Initial CNN Model ##
 
@@ -133,7 +133,7 @@ That doesn't seem to have helped, and if anything has made everything worse. Let
 
 ![intial cnn curves](https://user-images.githubusercontent.com/45251340/216479789-749a7875-229f-4f1e-89b5-256135ff8ae5.JPG)
 
-Our training accuracy is higher than our testing accuracy, signifying overfitting but significantly less so when compared to our DNN models. We also immediately see training loss occuring in our initial model, which we did not see in our initial DNN model. Our initial results look promising, so let's try adding some dropout regularization to see if we can improve our model.
+**Our training accuracy is higher than our testing accuracy, signifying overfitting but significantly less so when compared to our DNN models. We also immediately see training loss occuring in our initial model, which we did not see in our initial DNN model. Our initial results look promising, so let's try adding some dropout regularization to see if we can improve our model.**
 
 ## CNN Model With Dropout Regularization ##
 
@@ -153,7 +153,7 @@ Our training accuracy is higher than our testing accuracy, signifying overfittin
 
 ![cnn dropout reg curves](https://user-images.githubusercontent.com/45251340/216480570-876857f1-75c2-4ec8-81ff-2c3678de961b.JPG)
 
-Our training and testing accuracy are now the same, which is an improvement. Our training and testing loss are also extremely close in value. However our validation accuracy is still relatively low. Let's see what happens if we decrease the number of epochs to around 10.
+**Our training and testing accuracy are now the same, which is an improvement. Our training and testing loss are also extremely close in value. However our validation accuracy is still relatively low. Let's see what happens if we decrease the number of epochs to around 10.**
 
 ## CNN Model With Decreased Epochs##
 We used the same model as previous, but changed our number of epochs from 20 to 10.
@@ -170,7 +170,7 @@ We used the same model as previous, but changed our number of epochs from 20 to 
 
 ![cnn decrease epochs curves](https://user-images.githubusercontent.com/45251340/216481262-5cb70d4e-c757-4cb4-bd80-6ad0bcbed319.JPG)
 
-For the first time, our testing accuracy is higher than our training accuracy. Our validation accuracy is also the highest it has been during our tuning. This is significant improvement from our initial DNN and CNN model, so let's move on to our conclusion.
+**For the first time, our testing accuracy is higher than our training accuracy. Our validation accuracy is also the highest it has been during our tuning. This is significant improvement from our initial DNN and CNN model, so let's move on to our conclusion.**
 
 ## Conclusion ##
 
