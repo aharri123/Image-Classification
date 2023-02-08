@@ -1,7 +1,7 @@
 # Image-Classification
 
 ## Business Goal ##
-We'll be working with Palomar Medical Center, located in Escondido, California. Initially using a deep neural network, then moving onto a Convolutional Neural Network, we build a model that takes patient X-rays and identifies if the patient has Pneumonia or not. Creating a successful model will help the hospital doctors make a quicker diagnosis, and reduce the time spent on consulting X-rays before meeting with patients.
+We'll be working with Palomar Medical Center, located in Escondido, California. Initially using a deep neural network, then moving onto a Convolutional Neural Network, we build a model that takes patient X-rays and identifies if the patient has Pneumonia or not. Creating a successful model will help the hospital doctors make a quicker diagnosis, by reducing (if not eliminating totally) the time spent on consulting X-rays before meeting with patients. Once proven successful, It may also help to generalize over to other diseases and ailments that are able to be diagnosed via x-ray, such as broken bones and certain types of cancer.
 
 ## Data ##
 The data comes from a kaggle dataset of chest X-ray images. There are 5,856 images in total, and the data is split into train, test and validation folders. Each folder is further split into folders that contain Pneumonia and non Pneumonia X-rays. The images are split up in the folders as follows: 
@@ -17,7 +17,7 @@ The data comes from a kaggle dataset of chest X-ray images. There are 5,856 imag
 
 
 ## Starting off ##
-First we start off by taking all the data from our directories and augmenting them: 
+**First we start off by taking all the data from our directories and augmenting them:**
 
 ![reshaping](https://user-images.githubusercontent.com/45251340/216470702-8404dbad-3b62-4bfb-83ca-a07a2b594390.JPG)
 
@@ -33,7 +33,7 @@ First we start off by taking all the data from our directories and augmenting th
 
 ## Initial Model ##
 
-**Our initial deep neural network had 0 hidden layers: **
+**Our initial deep neural network had 0 hidden layers:**
 
 ![initial model](https://user-images.githubusercontent.com/45251340/216473473-85788f0c-9750-46bd-a035-fea52a52af89.JPG)
 
@@ -50,7 +50,7 @@ First we start off by taking all the data from our directories and augmenting th
 
 ![initial model curves](https://user-images.githubusercontent.com/45251340/216474012-57f0bb2e-ed3f-47f1-8069-b733e76aff8f.JPG)
 
-As we can see, our model is overfitting. So for our next model, we added some more layers.
+**Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring for our training model, which suggests our model needs some work. Let's add some more layers and see how that affects the model.**
 
 ## Deep Neural Network With Hidden Layers ##
 
@@ -63,7 +63,7 @@ As we can see, our model is overfitting. So for our next model, we added some mo
 
 **Our training and testing accuracy:** 
 
-![deep model with more layers accuracy](https://user-images.githubusercontent.com/45251340/216474474-025b61b8-cfec-4aa0-8f7c-f16e26a85444.JPG)
+![deep model with more layers accuracy](https://user-images.githubusercontent.com/45251340/217335040-21ceda77-c6b2-4136-bc1b-7f5c1ede57aa.JPG)
 
 
 **Our accuracy and loss curves:**
@@ -71,11 +71,11 @@ As we can see, our model is overfitting. So for our next model, we added some mo
 ![model with more layers curves](https://user-images.githubusercontent.com/45251340/216476418-60be30ed-0154-427d-b2b3-175c4f56e6d7.JPG)
 
 
-From this, we can see that our accuracy dramatically dropped, but that we're still overfitting. Next, we'll try adding more epochs to see if that has an effect.
+**This time our accuracy fell greatly. There's also no loss occuring in our training set still. Let's add some more epochs to see if that has any improvement on our results.**
 
 ## Deep Neural Network With More Epochs ##
 
-We ran the same model as before, except this time we increased the number of epochs from 5 to 10.
+**We ran the same model as before, except this time we increased the number of epochs from 5 to 10.**
 
 **Our epochs:**
 
@@ -89,7 +89,7 @@ We ran the same model as before, except this time we increased the number of epo
 
 ![model with more epochs curve](https://user-images.githubusercontent.com/45251340/216476800-b4906850-eb30-43e6-8a0b-20f48fc8f0be.JPG)
 
-We still have an overfitting issue, but our accuracy is back up again. Lastly, let's see if we can implement dropout regularization to reduce overfitting.
+**Our testing accuracy is still lower than our training accuracy, so some overfitting is still going on. However we're seeing some loss occuring in our training model, which is an improvement compared to before. Slightly better results, but let's add some dropout regularization to see if that helps decrease overfitting.**
 
 ## Deep Neural Network With Dropout Regularization ##
 
@@ -110,7 +110,7 @@ We still have an overfitting issue, but our accuracy is back up again. Lastly, l
 ![dropout reg curves](https://user-images.githubusercontent.com/45251340/216477641-f7f50ce5-d8f1-460e-83c0-2db76a4f2401.JPG)
 
 
-From our accuracy scores and curves, we can see that overfitting is still an issue. So let's try and switch over to a CNN model, and see if we can improve our output.
+**That doesn't seem to have helped, and if anything has made everything worse. Let's try a different approach and try using a CNN.**
 
 ## Our Initial CNN Model ##
 
@@ -133,7 +133,7 @@ From our accuracy scores and curves, we can see that overfitting is still an iss
 
 ![intial cnn curves](https://user-images.githubusercontent.com/45251340/216479789-749a7875-229f-4f1e-89b5-256135ff8ae5.JPG)
 
-Our results still suggest overfitting, so let's implement some more dropout regularization
+**Our training accuracy is higher than our testing accuracy, signifying overfitting but significantly less so when compared to our DNN models. We also immediately see training loss occuring in our initial model, which we did not see in our initial DNN model. Our initial results look promising, so let's try adding some dropout regularization to see if we can improve our model.**
 
 ## CNN Model With Dropout Regularization ##
 
@@ -153,10 +153,10 @@ Our results still suggest overfitting, so let's implement some more dropout regu
 
 ![cnn dropout reg curves](https://user-images.githubusercontent.com/45251340/216480570-876857f1-75c2-4ec8-81ff-2c3678de961b.JPG)
 
-Our curves improved slightly, as did our accuracy, but we're still overfitting, so let's see if we can improve our model even more. We'll decrease the number of epochs, as our accuracy curve suggests that accuracy is best around 10 epochs.
+**Our training and testing accuracy are now almost the same, which is an improvement. Our training and testing loss are also extremely close in value. However our validation accuracy is still relatively low. Let's see what happens if we decrease the number of epochs to around 10.**
 
 ## CNN Model With Decreased Epochs##
-We used the same model as previous, but changed our number of epochs from 20 to 10.
+**We used the same model as previous, but changed our number of epochs from 20 to 10.**
 
 **Our epochs:**
 
@@ -170,6 +170,7 @@ We used the same model as previous, but changed our number of epochs from 20 to 
 
 ![cnn decrease epochs curves](https://user-images.githubusercontent.com/45251340/216481262-5cb70d4e-c757-4cb4-bd80-6ad0bcbed319.JPG)
 
+**For the first time, our testing accuracy is higher than our training accuracy. Our validation accuracy is also the highest it has been during our tuning. This is significant improvement from our initial DNN and CNN model, so let's move on to our conclusion.**
 
 ## Conclusion ##
 
