@@ -43,11 +43,7 @@ First we start off by taking all the data images from our directories and augmen
 
 **Our initial deep neural network had 0 hidden layers:**
 
-![initial model](https://user-images.githubusercontent.com/45251340/216473473-85788f0c-9750-46bd-a035-fea52a52af89.JPG)
-
-**Our epochs:**
-
-![5 epochs](https://user-images.githubusercontent.com/45251340/216476152-8bdc6bb8-7dd7-46a4-a738-63d5f5e154e4.JPG)
+![initial dnn model summary](https://user-images.githubusercontent.com/45251340/219884458-7f93527f-48ba-4586-8674-fc7b1e618a25.JPG)
 
 
 **Our training and testing accuracy:** 
