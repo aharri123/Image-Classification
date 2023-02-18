@@ -107,42 +107,7 @@ For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we
 
 Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, so let's try tuning further to see if we can improve our model. 
 
-## CNN Model With Dropout Regularization ##
 
-**Implementing dropout regularization:**
-
-![cnn dropout reg](https://user-images.githubusercontent.com/45251340/216480307-a82831ed-5ba5-4eef-9cbc-1cd20c5fa8d1.JPG)
-
-**Our epochs:**
-
-![cnn dropout reg epochs](https://user-images.githubusercontent.com/45251340/216480524-9a3fefb3-dc26-4d18-8496-82d95cfde6e9.JPG)
-
-**Our training and testing accuracy:** 
-
-![cnn dropout reg accuracy](https://user-images.githubusercontent.com/45251340/216480558-ad516727-31a4-4d60-82a1-b93026ed6536.JPG)
-
-**Our accuracy and loss curves:**
-
-![cnn dropout reg curves](https://user-images.githubusercontent.com/45251340/216480570-876857f1-75c2-4ec8-81ff-2c3678de961b.JPG)
-
-**Our training and testing accuracy are now almost the same, which is an improvement. Our training and testing loss are also extremely close in value. However our validation accuracy is still relatively low. Let's see what happens if we decrease the number of epochs to around 10.**
-
-## CNN Model With Decreased Epochs##
-**We used the same model as previous, but changed our number of epochs from 20 to 10.**
-
-**Our epochs:**
-
-![cnn decrease epochs epochs](https://user-images.githubusercontent.com/45251340/216481212-3dd92522-b694-477a-870f-ea8c71722462.JPG)
-
-**Our training and testing accuracy:** 
-
-![cnn decrease epochs accuracy](https://user-images.githubusercontent.com/45251340/216481252-8fd529d4-a379-49d5-8fcc-1d229a0b9514.JPG)
-
-**Our accuracy and loss curves:**
-
-![cnn decrease epochs curves](https://user-images.githubusercontent.com/45251340/216481262-5cb70d4e-c757-4cb4-bd80-6ad0bcbed319.JPG)
-
-**For the first time, our testing accuracy is higher than our training accuracy. Our validation accuracy is also the highest it has been during our tuning. This is significant improvement from our initial DNN and CNN model, so let's move on to our conclusion.**
 
 ## Conclusion ##
 
