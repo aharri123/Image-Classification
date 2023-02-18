@@ -107,6 +107,27 @@ For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we
 
 Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, so let's try tuning further to see if we can improve our model. 
 
+## Final CNN Model ##
+After various tuning methods were used, we arrived at our final improved CNN model. Our final model implemented both dropout regularization, and a decreased number of epochs. 
+
+![final cnn model summary](https://user-images.githubusercontent.com/45251340/219893490-22fff15c-9338-40b1-bd8f-c8651ddc8abe.JPG)
+
+**Our accuracy and loss curves:**
+
+![final cnn model accuracy and loss curves](https://user-images.githubusercontent.com/45251340/219893750-d7c3f977-3ac7-4987-b708-7de2ef2eef90.JPG)
+
+**Classification report and confusion matrix:**
+
+![final cnn model classification report and cm](https://user-images.githubusercontent.com/45251340/219893980-0e4bbc5b-5ce7-460f-93d8-f0743ccae03c.JPG)
+
+**From our model accuracy we can see:**
+
+* Our training accuracy is 86%
+* Our testing accuracy is 88%
+* Our validation accuracy is 81%
+
+
+We can now see that the difference between our training and testing accuracy is slightly higher than it's been in our past DNN and CNN iterations, which indicates a further decrease in overfitting. Our validation accuracy is also the highest it has been during our tuning. This shows significant improvement from our initial/previous DNN and CNN models.
 
 
 ## Conclusion ##
