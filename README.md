@@ -37,9 +37,9 @@ First we start off by taking all the data images from our directories and augmen
 * X_val shape: (16, 120000)
 * y_val shape: (16, 1)
 
-**We can now move on to bulding our initial model**
+**We can now move on to bulding our initial DNN model**
 
-## Initial Model ##
+## Initial DNN Model ##
 
 **Our initial deep neural network had 0 hidden layers:**
 
