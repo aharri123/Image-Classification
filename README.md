@@ -50,12 +50,26 @@ First we start off by taking all the data images from our directories and augmen
 
 ![initial model curves](https://user-images.githubusercontent.com/45251340/216474012-57f0bb2e-ed3f-47f1-8069-b733e76aff8f.JPG)
 
-#### From our model we can see: ####
+**From our model we can see:**
 * Our model had a training accuracy of 92%
 * Our model had a testing accuracy of 72% 
 * There's no loss occuring in our training loss curve
 
 **Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring for our training model, which suggests our model needs some work.**
+
+
+## Further Attempts To Tune Our DNN Model ##
+We tuned our model several more times, trying different things like adding more layers, adding more epochs and utilizing dropout regularization. The results of our different models are summed up below: 
+
+
+| **Tuning Technique**   	| **Training Accuracy** 	| **Testing Accuracy** 	
+|------------------------	|-----------------------	|----------------------	
+| Adding hidden layers   	| 39%                   	| 34%                  	
+| Adding more epochs     	| 94%                   	| 79%                  	
+| Dropout regularization 	| 74%                   	| 62%                  	
+
+
+
 
 ## Deep Neural Network With Hidden Layers ##
 
