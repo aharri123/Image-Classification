@@ -30,12 +30,12 @@ First we start off by taking all the data images from our directories and augmen
 
 **After reshaping our data, we had the following shapes:**
 
-X_train shape: (5216, 120000)
-y_train shape: (5216, 1)
-X_test shape: (624, 120000)
-y_test shape: (624, 1)
-X_val shape: (16, 120000)
-y_val shape: (16, 1)
+* X_train shape: (5216, 120000)
+* y_train shape: (5216, 1)
+* X_test shape: (624, 120000)
+* y_test shape: (624, 1)
+* X_val shape: (16, 120000)
+* y_val shape: (16, 1)
 
 **Now it's time to build our initial model**
 
