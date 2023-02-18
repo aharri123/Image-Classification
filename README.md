@@ -81,6 +81,10 @@ It seems that our tuning methods aren't drastically improving our model. This co
 
 ![intial cnn curves](https://user-images.githubusercontent.com/45251340/216479789-749a7875-229f-4f1e-89b5-256135ff8ae5.JPG)
 
+**Classification report and confusion matrix:**
+
+![cnn initial model classification report and cm](https://user-images.githubusercontent.com/45251340/219891454-8755380b-4f4f-43a4-8a4a-291f61ad66ba.JPG)
+
 **From our model accuracy we can see:**
 * Our model had a training accuracy of 96%
 * Our model had a testing accuracy of 97% 
