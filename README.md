@@ -62,13 +62,11 @@ First we start off by taking all the data images from our directories and augmen
 ## Further Attempts To Tune Our DNN Model ##
 We tuned our model several more times, trying different things like adding more layers, adding more epochs and utilizing dropout regularization. The results of our different models are summed up below: 
 
-
-| **Tuning Technique**   	| **Training Accuracy** 	| **Testing Accuracy** 	
-|------------------------	|-----------------------	|----------------------	
-| Adding hidden layers   	| 39%                   	| 34%                  	
-| Adding more epochs     	| 94%                   	| 79%                  	
-| Dropout regularization 	| 74%                   	| 62%                  	
-
+| **Tuning Technique**   	| **Training Accuracy** 	| **Testing Accuracy** 	| **Validation Accuracy** 	|
+|------------------------	|-----------------------	|----------------------	|-------------------------	|
+| Adding hidden layers   	| 39%                   	| 34%                  	| 81%                     	|
+| Adding more epochs     	| 94%                   	| 79%                  	| 79%                     	|
+| Dropout regularization 	| 74%                   	| 62%                  	| 62%                     	|
 
 
 
