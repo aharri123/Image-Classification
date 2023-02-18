@@ -81,6 +81,11 @@ It seems that our tuning methods aren't drastically improving our model. This co
 
 ![intial cnn curves](https://user-images.githubusercontent.com/45251340/216479789-749a7875-229f-4f1e-89b5-256135ff8ae5.JPG)
 
+**From our model we can see:**
+* Our model had a training accuracy of 96%
+* Our model had a testing accuracy of 97% 
+* Our model had a validation accuracy of 75%
+
 **Our training accuracy is higher than our testing accuracy, signifying overfitting but significantly less so when compared to our DNN models. We also immediately see training loss occuring in our initial model, which we did not see in our initial DNN model. Our initial results look promising, so let's try adding some dropout regularization to see if we can improve our model.**
 
 ## CNN Model With Dropout Regularization ##
