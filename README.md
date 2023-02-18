@@ -81,10 +81,18 @@ It seems that our tuning methods aren't drastically improving our model. This co
 
 ![intial cnn curves](https://user-images.githubusercontent.com/45251340/216479789-749a7875-229f-4f1e-89b5-256135ff8ae5.JPG)
 
-**From our model we can see:**
+**From our model accuracy we can see:**
 * Our model had a training accuracy of 96%
 * Our model had a testing accuracy of 97% 
 * Our model had a validation accuracy of 75%
+
+****Let's take a look at our classification report results:** 
+For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we have a precision score of .97, a recall score of .99, and an f1 score of .98, meaning:
+
+* Out of all the x-rays that the model classified as Pneumonia, 97% were actually Pneumonia.
+* Out of all the x-rays that were Pneumonia x-rays, the model correctly predicted 99% of them
+* Our model has a high f1 score, indicating incredible performance on classifying x-ray images as Pneumonia.
+
 
 Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, so let's try tuning further to see if we can improve our model. 
 
