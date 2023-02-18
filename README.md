@@ -37,7 +37,7 @@ First we start off by taking all the data images from our directories and augmen
 * X_val shape: (16, 120000)
 * y_val shape: (16, 1)
 
-**Now it's time to build our initial model**
+**We can now move on to bulding our initial model**
 
 ## Initial Model ##
 
