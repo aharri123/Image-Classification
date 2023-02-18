@@ -16,20 +16,17 @@ The data comes from a kaggle dataset of chest X-ray images. There are 5,856 imag
 ![validation images](https://user-images.githubusercontent.com/45251340/216470461-c531972d-4403-4f35-a633-4d6d49dd1b42.JPG)
 
 
-**From our image distributions, we can see that there is a data imbalance in our training set, with there being more Pneumonia x-rays than normal x-rays**
+**From our image distributions, we can see that there is a data imbalance, with there being more Pneumonia x-rays than normal x-rays**
 
 ## Starting off ##
-**First we start off by taking all the data from our directories and augmenting them:**
+First we start off by taking all the data images from our directories and augmenting them into a 200 x 200 pixel size. After that, we create our training, testing and validation data sets. Finally we reshape our images. Our initial sets had the following shapes:
 
-![reshaping](https://user-images.githubusercontent.com/45251340/216470702-8404dbad-3b62-4bfb-83ca-a07a2b594390.JPG)
-
-**After augmenting, we'll create our training, testing, and validation sets, then reshape our images. Before reshaping, our image set sizes were:** 
-
-![before resizing data](https://user-images.githubusercontent.com/45251340/216472303-a48413cd-aabb-46dc-a73d-c7fb5a49bec8.JPG)
-
-**After reshaping our images, the sizes are:**
-
-![after resizing data](https://user-images.githubusercontent.com/45251340/216472520-fdaff589-bb7c-47b5-b9b9-5e213bcf2354.JPG)
+* X_train shape: (5216, 200, 200, 3)
+* y_train shape: (5216, 2)
+* X_test shape: (624, 200, 200, 3)
+* y_test shape: (624, 2)
+* X_val shape: (16, 200, 200, 3)
+* y_val shape: (16, 2)
 
 **Now it's time to build our initial model**
 
