@@ -55,7 +55,7 @@ First we start off by taking all the data images from our directories and augmen
 * Our model had a testing accuracy of 72% 
 * There's no loss occuring in our training model loss curve
 
-**Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring for our training model, which suggests our model needs some work. **
+**Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring for our training model, which suggests our model needs some work.**
 
 ## Deep Neural Network With Hidden Layers ##
 
