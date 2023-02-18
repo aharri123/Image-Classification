@@ -68,7 +68,7 @@ We tuned our model several more times, trying different things like adding more 
 | Adding more epochs     	| 94%                   	| 79%                  	| 79%                     	|
 | Dropout regularization 	| 74%                   	| 62%                  	| 62%                     	|
 
-
+It seems that our tuning methods aren't drastically improving our model. This could be due to our imbalance of data mentioned earlier, and also the type of model (DNN) that we're using. Let's try a different approach and try using a CNN, while also addressing the imbalance of data. We'll also start implementing classification reports and confusion matrices into our results.
 
 ## Our Initial CNN Model ##
 
