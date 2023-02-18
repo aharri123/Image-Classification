@@ -67,7 +67,7 @@ We tuned our model several more times, trying different things like adding more 
 | Adding more epochs     	| 94%                   	| 79%                  	| 79%                     	|
 | Dropout regularization 	| 74%                   	| 62%                  	| 62%                     	|
 
-It seems that our tuning methods aren't drastically improving our model. This could be due to our imbalance of data mentioned earlier, and also the type of model (DNN) that we're using. Let's try a different approach and try using a CNN, while also addressing the imbalance of data. We'll also start implementing classification reports and confusion matrices into our results.
+It seems that our tuning methods aren't drastically improving our model. This could be due to our imbalance of data mentioned earlier, and also the type of model (DNN) that we're using. Let's try a different approach and try using a CNN, while also addressing the imbalance of data. We'll also start implementing classification reports (mainly for recall) and confusion matrices into our results.
 
 ## Our Initial CNN Model ##
 
@@ -86,7 +86,7 @@ It seems that our tuning methods aren't drastically improving our model. This co
 * Our model had a testing accuracy of 97% 
 * Our model had a validation accuracy of 75%
 
-**Our training accuracy is higher than our testing accuracy, signifying overfitting but significantly less so when compared to our DNN models. We also immediately see training loss occuring in our initial model, which we did not see in our initial DNN model. Our initial results look promising, so let's try adding some dropout regularization to see if we can improve our model.**
+Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, so let's try tuning further to see if we can improve our model. 
 
 ## CNN Model With Dropout Regularization ##
 
