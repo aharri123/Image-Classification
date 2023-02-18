@@ -54,9 +54,8 @@ First we start off by taking all the data images from our directories and augmen
 * Our model had a training accuracy of 92%
 * Our model had a testing accuracy of 72% 
 * Our model had a validation accuracy of 75%
-* There's no loss occuring in our training loss curve
 
-**Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring for our training model, which suggests our model needs some work.**
+**Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring in our training loss curve, which suggests our model needs some work.**
 
 
 ## Further Attempts To Tune Our DNN Model ##
