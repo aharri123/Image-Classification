@@ -71,7 +71,7 @@ It seems that our tuning methods aren't drastically improving our model. This co
 
 ## Our Initial CNN Model ##
 
-**Our initial CNN model had 2 convolutional layers, 3 pooling layers, 1 flattening layer and 1 fully connected dense layer:**
+**Our initial CNN model had 3 convolutional layers, 3 pooling layers, 1 flattening layer and 1 fully connected dense layer:**
 
 
 ![initial cnn2](https://user-images.githubusercontent.com/45251340/216479154-8f8e741d-f926-45b7-975e-28e564b7b644.JPG)
