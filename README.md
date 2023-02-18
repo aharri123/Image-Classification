@@ -98,6 +98,12 @@ For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we
 * Out of all the x-rays that were Pneumonia x-rays, the model correctly predicted 99% of them
 * Our model has a high f1 score, indicating incredible performance on classifying x-ray images as Pneumonia.
 
+**Let's take a look at our confusion matrix results:**
+* 160 x-rays were correctly classified as being normal x-rays
+* 6 x-rays were wrongly classified as not being Pneumonia x-rays
+* 12 x-rays were wrongly classified as being Pneumonia x-rays
+* 446 x-rays were correctly classified as being Pneumonia x-rays
+
 
 Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, so let's try tuning further to see if we can improve our model. 
 
