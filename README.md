@@ -86,7 +86,8 @@ It seems that our tuning methods aren't drastically improving our model. This co
 * Our model had a testing accuracy of 97% 
 * Our model had a validation accuracy of 75%
 
-****Let's take a look at our classification report results:** 
+**Let's take a look at our classification report results:**
+
 For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we have a precision score of .97, a recall score of .99, and an f1 score of .98, meaning:
 
 * Out of all the x-rays that the model classified as Pneumonia, 97% were actually Pneumonia.
