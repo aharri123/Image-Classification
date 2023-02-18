@@ -70,66 +70,6 @@ We tuned our model several more times, trying different things like adding more 
 
 
 
-## Deep Neural Network With Hidden Layers ##
-
-![deep model with more layers](https://user-images.githubusercontent.com/45251340/216474359-aac42bd8-7a18-4692-a7c8-1578aff0ea27.JPG)
-
-**Our epochs:**
-
-![5 epochs v2](https://user-images.githubusercontent.com/45251340/216476237-d5a5c55c-dc7a-4ef7-ae72-3c2e964c48e7.JPG)
-
-
-**Our training and testing accuracy:** 
-
-![deep model with more layers accuracy](https://user-images.githubusercontent.com/45251340/217335040-21ceda77-c6b2-4136-bc1b-7f5c1ede57aa.JPG)
-
-
-**Our accuracy and loss curves:**
-
-![model with more layers curves](https://user-images.githubusercontent.com/45251340/216476418-60be30ed-0154-427d-b2b3-175c4f56e6d7.JPG)
-
-
-**This time our accuracy fell greatly. There's also no loss occuring in our training set still. Let's add some more epochs to see if that has any improvement on our results.**
-
-## Deep Neural Network With More Epochs ##
-
-**We ran the same model as before, except this time we increased the number of epochs from 5 to 10.**
-
-**Our epochs:**
-
-![10 epochs](https://user-images.githubusercontent.com/45251340/216476533-89599e1e-cd1d-42fe-b6d3-78b3f0c99053.JPG)
-
-**Our training and testing accuracy:** 
-
-![model with more epochs accuracy](https://user-images.githubusercontent.com/45251340/216476779-f75ce36c-ae7f-4c77-ae41-2a46ef372417.JPG)
-
-**Our accuracy and loss curves:**
-
-![model with more epochs curve](https://user-images.githubusercontent.com/45251340/216476800-b4906850-eb30-43e6-8a0b-20f48fc8f0be.JPG)
-
-**Our testing accuracy is still lower than our training accuracy, so some overfitting is still going on. However we're seeing some loss occuring in our training model, which is an improvement compared to before. Slightly better results, but let's add some dropout regularization to see if that helps decrease overfitting.**
-
-## Deep Neural Network With Dropout Regularization ##
-
-**Implementing dropout regularization:**
-
-![dropout regularization](https://user-images.githubusercontent.com/45251340/216477420-455c8b70-07db-4b9e-b29e-41560de9453e.JPG)
-
-**Our epochs:**
-
-![dropout reg accuracy](https://user-images.githubusercontent.com/45251340/216477590-f6e8189d-fa05-4d5b-a684-08bfe5cb8f19.JPG)
-
-**Our training and testing accuracy:** 
-
-![dropout reg acc](https://user-images.githubusercontent.com/45251340/216477621-311af745-fcc4-48d2-aff2-1479c7ae0381.JPG)
-
-**Our accuracy and loss curves:**
-
-![dropout reg curves](https://user-images.githubusercontent.com/45251340/216477641-f7f50ce5-d8f1-460e-83c0-2db76a4f2401.JPG)
-
-
-**That doesn't seem to have helped, and if anything has made everything worse. Let's try a different approach and try using a CNN.**
-
 ## Our Initial CNN Model ##
 
 **Our initial CNN model had 2 convolutional layers, 3 pooling layers, 1 flattening layer and 1 fully connected dense layer:**
