@@ -126,6 +126,20 @@ After various tuning methods were used, we arrived at our final improved CNN mod
 * Our testing accuracy is 88%
 * Our validation accuracy is 81%
 
+**Let's take a look at our classification report results:** 
+
+For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we have a precision score of .99, a recall score of .85, and an f1 score of .91, meaning:
+
+* Out of all the x-rays that the model classified as Pneumonia, 99% were actually Pneumonia.
+* Out of all the x-rays that were Pneumonia x-rays, the model correctly predicted 85% of them
+* Our model has a high f1 score, indicating great performance on classifying x-ray images as Pneumonia.
+
+**Let's take a look at our confusion matrix results:**
+* 169 x-rays were correctly classified as being normal x-rays
+* 70 x-rays were wrongly classified as not being Pneumonia x-rays
+* 3 x-rays were wrongly classified as being Pneumonia x-rays
+* 382 x-rays were correctly classified as being Pneumonia x-rays
+
 
 We can now see that the difference between our training and testing accuracy is slightly higher than it's been in our past DNN and CNN iterations, which indicates a further decrease in overfitting. Our validation accuracy is also the highest it has been during our tuning. This shows significant improvement from our initial/previous DNN and CNN models.
 
