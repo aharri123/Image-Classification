@@ -46,13 +46,14 @@ First we start off by taking all the data images from our directories and augmen
 ![initial dnn model summary](https://user-images.githubusercontent.com/45251340/219884458-7f93527f-48ba-4586-8674-fc7b1e618a25.JPG)
 
 
-**Our training and testing accuracy:** 
-
-![initial model accuracy](https://user-images.githubusercontent.com/45251340/216473891-798569a9-3e76-47ce-994e-4665ce48bc9e.JPG)
-
 **Our accuracy and loss curves:**
 
 ![initial model curves](https://user-images.githubusercontent.com/45251340/216474012-57f0bb2e-ed3f-47f1-8069-b733e76aff8f.JPG)
+
+#### From our model we can see: ####
+* Our model had a training accuracy of 92%
+* Our model had a testing accuracy of 72% 
+
 
 **Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring for our training model, which suggests our model needs some work. Let's add some more layers and see how that affects the model.**
 
