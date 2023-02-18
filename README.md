@@ -16,6 +16,7 @@ The data comes from a kaggle dataset of chest X-ray images. There are 5,856 imag
 ![validation images](https://user-images.githubusercontent.com/45251340/216470461-c531972d-4403-4f35-a633-4d6d49dd1b42.JPG)
 
 
+**From our image distributions, we can see that there is a data imbalance, with there being more 
 ## Starting off ##
 **First we start off by taking all the data from our directories and augmenting them:**
 
