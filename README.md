@@ -146,7 +146,7 @@ We can now see that the difference between our training and testing accuracy is 
 
 ## Conclusion ##
 
-The goal was to work with Palomar Medical Center to build an image classification model that analyzes patient X-rays and identifies if the patient has Pneumonia or not. This will help the hospital doctors make a quicker diagnosis, and reduce the time spent on consulting X-rays before meeting with patients. We initially used a Deep Neural Network (DNN), then moved onto a Convolutional Neural Network (CNN).
+The goal was to work with Palomar Medical Center to build an image classification model that analyzes patient X-rays and identifies if the patient has Pneumonia or not. This will help the hospital doctors make a quicker diagnosis, and reduce the time spent on consulting X-rays before meeting with patients. I initially used a Deep Neural Network (DNN), then moved onto a Convolutional Neural Network (CNN).
 
 I initially started with a DNN model, but found that the initial model was greatly overfitting, and needed work. Next, I tuned the model multiple times, by adjusting things like the number of layers, and the number of epochs of the model. I also tried implementing dropout regularization to further reduce overfitting. Despite my efforts, the model kept overfitting, and the accuracy was consistently low. As mentioned earlier, this could be due to the imbalance of data (more Pneumonia images than normal images), and also the type of neural network used (DNN). Therefore, I decided to try and use a different approach and switch to a Convolutional Neural Network (CNN).
 
