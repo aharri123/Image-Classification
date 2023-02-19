@@ -85,10 +85,10 @@ It seems that our tuning methods aren't drastically improving our model. This co
 
 ![cnn initial model classification report and cm](https://user-images.githubusercontent.com/45251340/219891454-8755380b-4f4f-43a4-8a4a-291f61ad66ba.JPG)
 
-**From our model accuracy we can see:**
-* Our model had a training accuracy of 96%
-* Our model had a testing accuracy of 97% 
-* Our model had a validation accuracy of 75%
+**Our model had:**
+* A training accuracy of 96%
+* A testing accuracy of 97% 
+* A validation accuracy of 75%
 
 **Let's take a look at our classification report results:**
 
