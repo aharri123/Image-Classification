@@ -50,10 +50,10 @@ First we start off by taking all the input images from our directories and resha
 
 ![initial model curves](https://user-images.githubusercontent.com/45251340/216474012-57f0bb2e-ed3f-47f1-8069-b733e76aff8f.JPG)
 
-**From our model we can see:**
-* Our model had a training accuracy of 92%
-* Our model had a testing accuracy of 72% 
-* Our model had a validation accuracy of 75%
+**Our model had:**
+* A training accuracy of 92%
+* A testing accuracy of 72% 
+* A validation accuracy of 75%
 
 **Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring in our training loss curve, which suggests our model needs some work.**
 
