@@ -141,7 +141,7 @@ For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we
 * 382 x-rays were correctly classified as being Pneumonia x-rays
 
 
-We can now see that the difference between our training and testing accuracy is slightly higher than it's been in our past DNN and CNN iterations, which indicates a further decrease in overfitting. Our validation accuracy is also the highest it has been during our tuning. This shows significant improvement from our initial/previous DNN and CNN models.
+We can now see that the difference between our training and testing accuracy is slightly higher than it's been in our past DNN and CNN iterations, which indicates a further decrease in overfitting. Our validation accuracy is also the highest it has been during our tuning. This, along with a more realistic recall score shows significant improvement from our initial/previous DNN and CNN models.
 
 
 ## Conclusion ##
