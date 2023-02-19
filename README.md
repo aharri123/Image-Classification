@@ -120,11 +120,11 @@ After various tuning methods were used, we arrived at our final improved CNN mod
 
 ![final cnn model classification report and cm](https://user-images.githubusercontent.com/45251340/219893980-0e4bbc5b-5ce7-460f-93d8-f0743ccae03c.JPG)
 
-**From our model accuracy we can see:**
+**Our model had:**
 
-* Our training accuracy is 86%
-* Our testing accuracy is 88%
-* Our validation accuracy is 81%
+* A training accuracy of 86%
+* A testing accuracy of 88%
+* A validation accuracy of 81%
 
 **Let's take a look at our classification report results:** 
 
