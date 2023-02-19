@@ -105,7 +105,7 @@ For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we
 * 446 x-rays were correctly classified as being Pneumonia x-rays
 
 
-Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, so let's try tuning further to see if we can improve our model. 
+Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, but we tried various other tuning methods beore finally arriving at our final model. 
 
 ## Final CNN Model ##
 After various tuning methods were used, we arrived at our final improved CNN model. Our final model implemented both dropout regularization, and a decreased number of epochs. 
