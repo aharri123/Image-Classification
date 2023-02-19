@@ -19,7 +19,7 @@ The data comes from a kaggle dataset of chest X-ray images. There are 5,856 imag
 **From our image distributions, we can see that there is a data imbalance, with there being more Pneumonia x-rays than normal x-rays, which we'll address in our CNN model**
 
 ## Starting off ##
-First we start off by taking all the data images from our directories and augmenting them into a 200 x 200 pixel size. After that, we create our training, testing and validation data sets. Finally we reshape our images. Our initial sets had the following shapes:
+First we start off by taking all the input images from our directories and reshape them into a 200 x 200 size. After that, we create our training, testing and validation data sets. Finally we reshape our datasets for use in our model. Our initial sets had the following shapes:
 
 * X_train shape: (5216, 200, 200, 3)
 * y_train shape: (5216, 2)
