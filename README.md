@@ -16,10 +16,10 @@ The data comes from a kaggle dataset of chest X-ray images. There are 5,856 imag
 ![validation images](https://user-images.githubusercontent.com/45251340/216470461-c531972d-4403-4f35-a633-4d6d49dd1b42.JPG)
 
 
-**From our image distributions, we can see that there is a data imbalance, with there being more Pneumonia x-rays than normal x-rays**
+**From our image distributions, we can see that there is a data imbalance, with there being more Pneumonia x-rays than normal x-rays, which we'll address in our CNN model**
 
 ## Starting off ##
-First we start off by taking all the data images from our directories and augmenting them into a 200 x 200 pixel size. After that, we create our training, testing and validation data sets. Finally we reshape our images. Our initial sets had the following shapes:
+First we start off by taking all the input images from our directories and reshape them into a 200 x 200 size. After that, we create our training, testing and validation data sets. Finally we reshape our datasets for use in our model. Our initial sets had the following shapes:
 
 * X_train shape: (5216, 200, 200, 3)
 * y_train shape: (5216, 2)
@@ -50,10 +50,10 @@ First we start off by taking all the data images from our directories and augmen
 
 ![initial model curves](https://user-images.githubusercontent.com/45251340/216474012-57f0bb2e-ed3f-47f1-8069-b733e76aff8f.JPG)
 
-**From our model we can see:**
-* Our model had a training accuracy of 92%
-* Our model had a testing accuracy of 72% 
-* Our model had a validation accuracy of 75%
+**Our model had:**
+* A training accuracy of 92%
+* A testing accuracy of 72% 
+* A validation accuracy of 75%
 
 **Looks like our model is overfitting, since our training accuracy is higher than our testing accuracy. This is not surprising for an initial model. We can also see that there's no loss occuring in our training loss curve, which suggests our model needs some work.**
 
@@ -85,10 +85,10 @@ It seems that our tuning methods aren't drastically improving our model. This co
 
 ![cnn initial model classification report and cm](https://user-images.githubusercontent.com/45251340/219891454-8755380b-4f4f-43a4-8a4a-291f61ad66ba.JPG)
 
-**From our model accuracy we can see:**
-* Our model had a training accuracy of 96%
-* Our model had a testing accuracy of 97% 
-* Our model had a validation accuracy of 75%
+**Our model had:**
+* A training accuracy of 96%
+* A testing accuracy of 97% 
+* A validation accuracy of 75%
 
 **Let's take a look at our classification report results:**
 
@@ -105,7 +105,7 @@ For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we
 * 446 x-rays were correctly classified as being Pneumonia x-rays
 
 
-Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, so let's try tuning further to see if we can improve our model. 
+Already compared to our previous DNN models (including the initial model), our testing accuracy is higher than our training accuracy, signifying a slight decrease in overfitting. We also immediately see training loss occuring in our initial model loss curve, which we did not see in our initial DNN model. Lastly, we can see that our validation accuracy is 75%, which isn't bad for an initial model, but could be higher. Our initial results look promising, but we tried various other tuning methods beore finally arriving at our final model. 
 
 ## Final CNN Model ##
 After various tuning methods were used, we arrived at our final improved CNN model. Our final model implemented both dropout regularization, and a decreased number of epochs. 
@@ -120,11 +120,11 @@ After various tuning methods were used, we arrived at our final improved CNN mod
 
 ![final cnn model classification report and cm](https://user-images.githubusercontent.com/45251340/219893980-0e4bbc5b-5ce7-460f-93d8-f0743ccae03c.JPG)
 
-**From our model accuracy we can see:**
+**Our model had:**
 
-* Our training accuracy is 86%
-* Our testing accuracy is 88%
-* Our validation accuracy is 81%
+* A training accuracy of 86%
+* A testing accuracy of 88%
+* A validation accuracy of 81%
 
 **Let's take a look at our classification report results:** 
 
@@ -141,12 +141,12 @@ For our test model class 1 (meaning a chest x-ray is classified as Pneumonia) we
 * 382 x-rays were correctly classified as being Pneumonia x-rays
 
 
-We can now see that the difference between our training and testing accuracy is slightly higher than it's been in our past DNN and CNN iterations, which indicates a further decrease in overfitting. Our validation accuracy is also the highest it has been during our tuning. This shows significant improvement from our initial/previous DNN and CNN models.
+We can now see that the difference between our training and testing accuracy is slightly higher than it's been in our past DNN and CNN iterations, which indicates a further decrease in overfitting. Our validation accuracy is also the highest it has been during our tuning. This, along with a more realistic recall score shows significant improvement from our initial/previous DNN and CNN models.
 
 
 ## Conclusion ##
 
-The goal was to work with Palomar Medical Center to build an image classification model that analyzes patient X-rays and identifies if the patient has Pneumonia or not. This will help the hospital doctors make a quicker diagnosis, and reduce the time spent on consulting X-rays before meeting with patients. We initially used a Deep Neural Network (DNN), then moved onto a Convolutional Neural Network (CNN).
+The goal was to work with Palomar Medical Center to build an image classification model that analyzes patient X-rays and identifies if the patient has Pneumonia or not. This will help the hospital doctors make a quicker diagnosis, and reduce the time spent on consulting X-rays before meeting with patients. I initially used a Deep Neural Network (DNN), then moved onto a Convolutional Neural Network (CNN).
 
 I initially started with a DNN model, but found that the initial model was greatly overfitting, and needed work. Next, I tuned the model multiple times, by adjusting things like the number of layers, and the number of epochs of the model. I also tried implementing dropout regularization to further reduce overfitting. Despite my efforts, the model kept overfitting, and the accuracy was consistently low. As mentioned earlier, this could be due to the imbalance of data (more Pneumonia images than normal images), and also the type of neural network used (DNN). Therefore, I decided to try and use a different approach and switch to a Convolutional Neural Network (CNN).
 
@@ -154,7 +154,7 @@ My results drastically improved when switching over from a DNN to a CNN. The ini
 
 **Recommendations**
 
-There are a few recommendations I have for using an improved model in a hospital setting. For starters, it would be beneficial to use this model in the same setting where the x-ray is taken. This way, the x-ray can immediately be analyzed by the model, vs having to print out and develop the x-ray, then have a doctor analyze the x-ray. Initially the doctor may need to double check the analysis, but the goal is to create a completely reliable model that can diagnose an x-ray without needing a doctor to check. Another recommendation would be to try out different sized x-ray formats. Different sizes may be processed at different speeds, or processed more efficiently, so it would be beneficial to try to find the right size.
+There are a few recommendations I have for using an improved model in a hospital setting. For starters, it would be beneficial to use this model in the same setting where the x-ray is taken. This way, the x-ray can immediately be analyzed by the model, vs having to print out and develop the x-ray, then have a doctor analyze the x-ray. Initially the doctor may need to double check the analysis, but the goal is to create a completely reliable model that can diagnose an x-ray without needing a doctor to check. Another recommendation would be to try out different sized x-ray formats. Different sizes may be processed at different speeds, or processed more efficiently, so it would be beneficial to try to find the right size that yields the most consistent, accurate results.
 
 If these technical and hospital setting recommendations are implemented, than a model can be created that will greatly reduce the time spent by doctors analyzing x-rays and even potentially remove the need entirely. Removing this need for evaluation and analysis will allow doctors to spend more time with their patient(s), and can even be revolutionary in diagnosing other ailments such as broken bones, bone cancer, and even breast cancer.
 
