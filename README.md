@@ -158,3 +158,10 @@ There are a few recommendations I have for using an improved model in a hospital
 
 If these technical and hospital setting recommendations are implemented, than a model can be created that will greatly reduce the time spent by doctors analyzing x-rays and even potentially remove the need entirely. Removing this need for evaluation and analysis will allow doctors to spend more time with their patient(s), and can even be revolutionary in diagnosing other ailments such as broken bones, bone cancer, and even breast cancer.
 
+## Repository Structure ##
+```
+├── data
+├── Image-Classification.ipynb
+├── Pneumonia Classification.pdf
+├── README.md
+```
